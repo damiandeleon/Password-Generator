@@ -1,6 +1,9 @@
 # Password-Generator
 The purpose of this program is to generate a random password that satisfies the user's choice of character types, and length.  The password generated should be difficult to reproce or hack.  
 
+## How to Launch Password Generator
+click: [Launch Password Generator](https://damiandeleon.github.io/Password-Generator/)
+
 ## How to start the program
 The password Generator will be initiated by clicking the "Generate Password" button, which is shaded in red.
 
