@@ -7,6 +7,7 @@
 html,
 body,
 .wrapper {
+  background-color: grey;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -19,23 +20,26 @@ body {
 }
 
 .wrapper {
-  padding-top: 30px;
+  padding-top: 15px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 header {
+  font-family: monospace;
+  font-size: x-large;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: black
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background: rgb(46,59,187);
+  background: radial-gradient(circle, rgba(46,59,187,1) 0%, rgba(175,202,255,1) 0%, rgba(185,255,255,1) 100%);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 10px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto;
@@ -102,7 +106,6 @@ button[disabled] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: none;
   display: block;
   width: 100%;
   padding-top: 15px;

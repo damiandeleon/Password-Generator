@@ -4,19 +4,19 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   //promopt the user to enter 
-  let pwLength = prompt("Hi! How many characters would you like your password to contain? NOTE:  Response must be in a form of a number between 8 and 128");
+  let pwLength = prompt("How long (8 to 128 characters) would you like your password to be?");
 
   //check to see if the password falls between 8 and 128 and return with a alert if not.
   if (pwLength < 8 || pwLength > 128) {
-    alert("Password length must be in the form of a number between 8 and 128 characters");
+    alert("Password length must be between 8 and 128 characters");
     pwLength;
     return
   }
   //set up variables and confirm messages to collect booleans for the password criteria
-  let pwLowChar = confirm("Click OK to include lowercase characters.");
-  let pwUpChar = confirm("Click OK to include uppercase characters.");
-  let pwSpecChar = confirm("Click OK to include special characters.");
-  let pwNumChar = confirm("Click OK to include numeric characters.");
+  let pwLowChar = confirm("Click OK to include lowercase characters\r\nCancel to exclude");
+  let pwUpChar = confirm("Click OK to include uppercase characters\r\nCancel to exclude");
+  let pwSpecChar = confirm("Click OK to include special characters\r\nCancel to exclude");
+  let pwNumChar = confirm("Click OK to include numeric characters\r\nCancel to exclude");
 
   //set up an empty string to collect the list of characters that the user has chosen to include in the password they want
   let charList = "";
