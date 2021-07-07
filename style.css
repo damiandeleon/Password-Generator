@@ -37,9 +37,9 @@ header {
 .card {
   background: rgb(46,59,187);
   background: radial-gradient(circle, rgba(46,59,187,1) 0%, rgba(175,202,255,1) 0%, rgba(185,255,255,1) 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 10px;
+  border-radius: 15px;
+  border: black solid 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 20px 28px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto;
@@ -116,7 +116,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px solid #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
