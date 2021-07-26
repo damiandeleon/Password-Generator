@@ -36,55 +36,86 @@ function writePassword() {
     let pwNumCharSet = "1234567890";
 
     //create if statements to tell the program what to do in each scenario (if the arguments are true or false)
+    //if user chooses to include lowercsae characters
     if (pwLowChar) {
+      //concat the varialbe pwLowCharSet to the charList string
       charList = charList.concat(pwLowCharSet);
+      //then if user chooses to include uppercase characters
       if (pwUpChar) {
+        //concat the uppercase character string set to the new charList string
         charList = charList.concat(pwUpCharSet);
+        //then if user chooses to include special characters
         if (pwSpecChar) {
+          //concat the special characters string set to the new charList string
           charList = charList.concat(pwSpecCharSet);
+          //then if user chooses to include number characters
           if (pwNumChar) {
+            //concat the number string set to the new charList string
             charList = charList.concat(pwNumCharSet);
-          } 
-        } else {
+          }
+        } else {  //else if user REJECTS including special characters
+          //then if user chooses to include number characters
           if (pwNumChar) {
+            //concat the number string set to the new charList string
             charList = charList.concat(pwNumCharSet);
           }
         }
-      } else {
+      } else { //else if user REJECTS including uppercase characters 
+        //then if user chooses to include special characters
         if (pwSpecChar) {
+          //concat the special characters string set to the new charList string
           charList = charList.concat(pwSpecCharSet);
+          //then if user chooses to include number characters
           if (pwNumChar) {
+            //concat the number string set to the new charList string
             charList = charList.concat(pwNumCharSet);
-          } 
-        } else {
+          }
+        } else {  //else if user REJECTS including special characters
+          //then if user chooses to include number characters
           if (pwNumChar) {
+            //concat the number string set to the new charList string
             charList = charList.concat(pwNumCharSet);
           }
         }
       }
-    } else {
+    } else {  //if user REJECTS including lowercase characters
+      //if user chooss to include uppercase characters
       if (pwUpChar) {
+        //concat the uppercase character string set to the new charList string
         charList = charList.concat(pwUpCharSet);
+        //then if user chooses to include special characters 
         if (pwSpecChar) {
+          //concat the special character string to the new charList string
           charList = charList.concat(pwSpecCharSet);
+          //if user chooses to include numbers
           if (pwNumChar) {
+            //concat numbers string to the new charList string
             charList = charList.concat(pwNumCharSet);
           }
-        } else {
+        } else {  //if user REJECTS including special characters
+          //if user chooses to include numbers
           if (pwNumChar) {
+            //concat numbers string to the new charList string
             charList = charList.concat(pwNumCharSet);
           }
+          //if user REJECTS including numbers, continue through the rest of the funtion steps till return is reached
         }
-      } else {
+      } else { //if user REJECTS including uppercase characters
+        // if user chooses to include special characters
         if (pwSpecChar) {
+          //then concat special character set to the new charList string
           charList = charList.concat(pwSpecCharSet);
+          // then if user chooses to include numbmers 
           if (pwNumChar) {
+            //then concat numbers set to the new charList string
             charList = charList.concat(pwNumCharSet);
           }
-        } else {
+        } else {  //if user REJECTS including special characters
+          //if user chooses to include number
           if (pwNumChar) {
+            //concat numbers set to the new charList string
             charList = charList.concat(pwNumCharSet);
-          } else {
+          } else {  //if user REJECTS including numbers, return to close the function
             return;
           }
         }
